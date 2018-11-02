@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        style="@style/Rl_normal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/img_backbtnaddress"
+            android:src="@drawable/ic_keyboard_arrow_left"
+            style="@style/imgvw_normal_mrgn_pad"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            style="@style/tv_heading_mrgn_pad"
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:text="@string/add_vehicle"/>
+
+        <TextView
+            android:id="@+id/button_send"
+            android:text="@string/save"
+            tools:ignore="RelativeOverlap"
+            style="@style/tv_normal"
+            android:layout_centerVertical="true"
+            android:drawableStart="@drawable/send"
+            android:paddingLeft="@dimen/dp10"
+            android:textSize="@dimen/sp18"
+            android:paddingRight="@dimen/dp10"
+            android:background="@drawable/sendshape"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content"
+        style="@style/view_pager"/>
+
+
+</LinearLayout>
